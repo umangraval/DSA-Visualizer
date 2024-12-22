@@ -1,0 +1,198 @@
+.ql-align-center {
+  text-align: center;
+}
+
+.ql-align-right {
+  text-align: right;
+}
+
+.ql-align-justify {
+  text-align: justify;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+.ql-syntax {
+  background-color: #23241f;
+  border-radius: 4px;
+  padding: 8px;
+  color: azure;
+}
+
+.Circle,
+.normal {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f83b90 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  font-weight: 800;
+  color: #fff !important;
+  box-shadow: 3px 4px 8px -1px rgba(0, 0, 0, 0.73) !important;
+  animation: 1s ease 0s 1 normal none running crescendo;
+}
+
+.Square {
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  font-weight: 800;
+  color: #fff;
+  box-shadow: 3px 4px 8px -1px rgba(0, 0, 0, 0.73);
+}
+
+.stacktop {
+  animation: 1s ease 0s 1 normal none running crescendo;
+}
+
+@keyframes crescendo {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.Arrow {
+  width: 35px;
+  height: 35px;
+  margin-left: 8px;
+  margin-right: 8px;
+  animation-name: shake;
+  animation-duration: 1s;
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: scale(0) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: scale(1.1) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: scale(1.25) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: scale(1.5) rotate(-12deg);
+  }
+  40% {
+    -webkit-transform: scale(1.75) rotate(-18deg);
+  }
+  50% {
+    -webkit-transform: scale(2) rotate(-24deg);
+  }
+  60% {
+    -webkit-transform: scale(1.75) rotate(18deg);
+  }
+  70% {
+    -webkit-transform: scale(1.5) rotate(12deg);
+  }
+  80% {
+    -webkit-transform: scale(1.25) rotate(6deg);
+  }
+  90% {
+    -webkit-transform: scale(1.1) rotate(1deg);
+  }
+  100% {
+    -webkit-transform: scale(0) rotate(0deg);
+  }
+}
+
+.Bar {
+  margin-left: 2px;
+  transition: height 0.52s;
+  border: 1px solid #f1f1f1;
+  border-radius: 2px;
+  box-shadow: 3px 4px 8px -1px rgba(0, 0, 0, 0.73);
+}
+
+.Board-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.SingleNode_Animation {
+  animation-name: square;
+  animation-duration: 0.3s;
+}
+
+@keyframes square {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1.1);
+    box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.87);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.89);
+  }
+  70% {
+    transform: scale(1.12);
+    box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.9);
+  }
+  90% {
+    transform: scale(1.1);
+    box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.93);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.inline-block {
+  transition: .2s ease-in-out 0s;
+}
+.inline-block:hover {
+  transform: scale(1.25);
+}
+
+.tick_animation {
+  animation-name: tick;
+  animation-duration: 0.5s;
+}
+
+@keyframes tick {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
